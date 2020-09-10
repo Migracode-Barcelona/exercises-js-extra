@@ -4,7 +4,7 @@ PPT types of variables
 talk about VC autocomplete of methods
 string -> concatenation ( a + " x " b, `${a} x ${b}` )
 
-
+ES5 vs ES6
 https://migracode-barcelona.github.io/syllabus/js-core-3/week-10/lesson.html
 
 1. array names
@@ -16,6 +16,22 @@ talk about visual code autocomplete in for
 in foreach explain arrow functions
 explain what is element or teammember
 
+
+for (let i = 0; i < mcTeam.length; i++) {
+    let element = mcTeam[i];
+    element = element[0].toUpperCase() + element.substring(1);    
+    console.log(element);
+}
+
+mcTeam.forEach(element => {
+    element = element[0].toUpperCase() + element.substring(1);    
+    console.log(element);
+});
+
+mcTeam.map(element => {
+    element = element[0].toUpperCase() + element.substring(1);    
+    console.log(element);
+})
 
 3.exercise to understand functions, same code n times wit a console.log
 make he same with an arrow function
@@ -64,3 +80,17 @@ filter
 foreach
 map
 
+function filter(movies, text){
+    // YOUR CODE HERE
+    let filterArray = [];
+	for (let i=0;i<movies.length;i++){
+		if (movies[i].toUpperCase().includes(text.toUpperCase())){
+			filterArray.push(movies[i]);
+		}
+	}
+
+	return filterArray;
+}
+
+
+console.log("The cities that include = " + searchText +  " are: " + filter(citiesArray,searchText)); //Barcelona

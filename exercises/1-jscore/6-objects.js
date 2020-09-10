@@ -4,7 +4,7 @@
     - Write a function that given an array of movies return all the movies that include the text in their titles, if there is not any match return null
     - Filter is not case sensitive, club should be equal to CLUB in the function
     Step2:
-    - Add to the function a new parameter 'minRate' , to filter only movies with a greater rate 
+    - Add to the function a new parameter 'minRate' , to filter only movies with a greater value of the parameter
     - Add to the function a new parameter 'genre', to filter only movies that include this genre
 */
 
@@ -161,9 +161,16 @@ let movies = [
 ];
 
 
-function filter(movies, text){
-    // YOUR CODE HERE
+const filter = (movies, text) => {
+	// YOUR CODE HERE
+}
+
+const filter2 = (movies, text, minRate, genre) => {
+	// YOUR CODE HERE
 }
 
 console.log("Searching fi the result is: " + filter(bestMovies,"fi"));
 console.log("Searching the the result is: " + filter(bestMovies,"the"));
+
+console.log("Searching fi the result is: " + filter2(bestMovies,"fo",9,"Drama"));
+console.log("Searching the the result is: " + filter2(bestMovies,"the",9,"Crime"));

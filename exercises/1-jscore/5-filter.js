@@ -1,7 +1,7 @@
 /*
 	MoviesFinder
-	Write a function that given an array of movies return the first result that matches with the name, if there is not any match return null
-	Find is not case sensitive, club should be equal to CLUB in the function
+	Write a function that given an array of movies return all the movies that include the text in their titles, if there is not any match return null
+	Filter is not case sensitive, club should be equal to CLUB in the function
 */
 
 const bestMovies = [
@@ -20,12 +20,13 @@ const bestMovies = [
 	"Star Wars: Episode V - The Empire Strikes Back",
 ];
 
-function find(movies, titleToSearch){
+const filter = (movies, text) => {
 	// YOUR CODE HERE
 }
 
+console.log("Searching fi the result is: " + filter(bestMovies,"fi"));
+console.log("Searching the the result is: " + filter(bestMovies,"the"));
 
-console.log("Searching Fight Club as a best movie: " + find(bestMovies,"Fight club"));
-console.log("Searching Titanic as a best movie: " + find(bestMovies,"Titanic"));
+
 
 

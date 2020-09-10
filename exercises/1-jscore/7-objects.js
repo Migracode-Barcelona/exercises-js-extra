@@ -1,11 +1,15 @@
 /*
-    Build a function that given the needed information calculates the monthly net Salary by:
-    - Employees with age below or equal 30 pay the percentage of BELOW30_TAXES to the government
-    - Employees with age above 30 pay the percentage of ABOVE30_TAXES to the government
-    - Employees can choose to get 2 extra payments or not, if they choose 14 payments the gross salary will be divided by 14, otherwise by 12
-    - Employees with a degree of disability, have a reduction of 3% in their goverment taxes
-    Build an array with all the employees
-    Use forEach to console.log the name and the netSalary of all employees
+    Step1: 
+    - Build a function that given the needed information calculates the monthly net Salary by:
+        - Employees with age below or equal 30 pay the percentage of BELOW30_TAXES to the government
+        - Employees with age above 30 pay the percentage of ABOVE30_TAXES to the government
+    Step2:
+        - Employees can choose to get 2 extra payments or not, if they choose 14 payments the gross salary will be divided by 14, otherwise by 12
+        - Employees with a degree of disability, have a reduction of 3% in their goverment taxes
+        - Tip: create a variable with the % of taxes
+    Step3:
+        - Build an array with all the employees
+        - Use forEach to console.log the name and the netSalary of all employees
 
 */
 
@@ -41,6 +45,7 @@ const senior1 = {
 };
 
 // YOUR CODE HERE
+
 
 /* EXPECTED RESULT
 > The net salary of Lukasz is 1474.28€/month

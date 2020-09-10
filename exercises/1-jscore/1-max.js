@@ -5,7 +5,7 @@
 const numbersArray1 = [1,3,5,9];
 const numbersArray2 = [7,8,5,7,3,6];
 
-function max(){
+const max = (numbersArray) => {
 
     // YOUR CODE HERE
 }
